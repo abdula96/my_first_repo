@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Adventures - Destinations</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        table tr {
+            transition: background-color 0.3s ease;
+        }
+
+        table tr:hover {
+            background-color: #ccece6; 
+        }
+
+        button {
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #005b47; 
+            transform: scale(1.05); 
+        }
+
+        nav ul {
+            padding: 0;
+            display: flex;
+            justify-content: center; /* Center the items */
+            list-style-type: none; /* Remove default list styling */
+        }
+
+        nav ul section {
+            margin: 0 10px; /* Add space between items */
+        }
+
+        nav a {
+            padding: 10px 15px;
+            background-color: #00796b; /* Background color for the links */
+            color: white; /* Text color */
+            border-radius: 5px; /* Rounded corners */
+            transition: background-color 0.3s ease, transform 0.3s ease; /* Transition for hover effect */
+        }
+
+        nav a:hover {
+            background-color: #005b47; /* Darker shade on hover */
+            transform: scale(1.1); /* Slightly increase size on hover */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Explore Amazing Destinations</h1>
+        <nav>
+            <ul>
+                <section><li><a href="home.html">Home</a></li></section>
+                <section><li><a href="destination.html">Destination</a></li></section>
+                <section><li><a href="explorer.html">Explore</a></li></section>
+                <section><li><a href="contact.html">Contact</a></li></section>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h2>Top Travel Destinations</h2>
+        <table class="table table-striped">
+            <tr>
+                <th>Destination</th>
+                <th>Country</th>
+                <th>Highlights</th>
+            </tr>
+            <tr>
+                <td>Bali</td>
+                <td>Indonesia</td>
+                <td>Beaches, Culture, Nature</td>
+            </tr>
+            <tr>
+                <td>Paris</td>
+                <td>France</td>
+                <td>Eiffel Tower, Art, Cuisine</td>
+            </tr>
+            <tr>
+                <td>NYC</td>
+                <td>U.S</td>
+                <td>Times Square, Statue of Liberty, Cuisine...</td>
+            </tr>
+            <tr>
+                <td>Rome</td>
+                <td>Italy</td>
+                <td>History, Culture, Architecture</td>
+            </tr>
+            <tr>
+                <td>Tokyo</td>
+                <td>Japan</td>
+                <td>Technology, Cuisine, Culture</td>
+            </tr>
+        </table>
+ <form action="explorer.html" method="get">
+            <label for="destination">Choose your dream destination:</label>
+            <select id="destination" class="form-control">
+                <option value="bali">Bali</option>
+                <option value="paris">Paris</option>
+                <option value="nyc">NYC</option>
+                <option value="rome">Rome</option>
+                <option value="tokyo">Tokyo</option>
+            </select>
+            <button type="submit" class="btn btn-primary">Explore</button> 
+        </form>

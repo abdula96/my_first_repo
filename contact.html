@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Adventures - Contact</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        nav ul {
+            padding: 0;
+            display: flex;
+            justify-content: center; /* Center the items */
+            list-style-type: none; /* Remove default list styling */
+        }
+
+        nav ul section {
+            margin: 0 10px; /* Add space between items */
+        }
+
+        nav a {
+            padding: 10px 15px;
+            background-color: #00796b; /* Background color for the links */
+            color: white; /* Text color */
+            border-radius: 5px; /* Rounded corners */
+            transition: background-color 0.3s ease, transform 0.3s ease; /* Transition for hover effect */
+        }
+
+        nav a:hover {
+            background-color: #005b47; /* Darker shade on hover */
+            transform: scale(1.1); /* Slightly increase size on hover */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+        <nav>
+            <ul>
+                <section><li><a href="home.html">Home</a></li></section>
+                <section><li><a href="destination.html">Destination</a></li></section>
+                <section><li><a href="explorer.html">Explore</a></li></section>
+                <section><li><a href="contact.html">Contact</a></li></section>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h2>Get in Touch</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" required />
+            <label for="email">Email:</label>
+            <input type="email" id="email" required />
+            <label for="message">Message:</label>
+            <textarea id="message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+</body>
+</html>
